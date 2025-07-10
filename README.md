@@ -195,6 +195,17 @@ nvm use 22
 nvm alias default 22
 node -v
 ```
+### 設定終端機色彩
+
+```sh
+# Locale and terminal color settings
+cat <<'EOF' | tee -a ~/.bashrc
+export LANG=C.UTF-8
+export LC_ALL=C.UTF-8
+export TERM=xterm-256color
+export COLORTERM=truecolor
+EOF
+```
 
 ### 設定 Bash 環境
 
